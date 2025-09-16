@@ -42,7 +42,7 @@ main:
     authors: <strong>Zijie Zhao</strong>, Yuqian Fu, Jiajun Chai, Yuanheng Zhu, Dongbin Zhao
     category: first_author
     conference_short: IEEE TNNLS
-    conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(IEEE TNNLS)</strong>, 2025.
+    conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(TNNLS)</strong>, 2025.
     pdf: https://ieeexplore.ieee.org/abstract/document/10905042
     code: https://github.com/zhaozijie2022/mg2l
     image: ./assets/img/teaser_mg2l.png
@@ -63,7 +63,7 @@ main:
     authors: <strong>Zijie Zhao</strong>, Lei Shi, Tong Li, Jinliang Shao, Yuhua Cheng
     category: first_author
     conference_short: IEEE TCSS
-    conference: IEEE Transactions on Computational Social Systems <strong>(IEEE TCSS)</strong>, 2023.
+    conference: IEEE Transactions on Computational Social Systems <strong>(TCSS)</strong>, 2023.
     pdf: https://ieeexplore.ieee.org/abstract/document/9711916/
     image: ./assets/img/teaser_opinion.png
     abstract: >
@@ -100,10 +100,10 @@ main:
       }
 
   - title: "CPIG: Leveraging Consistency Policy with Intention Guidance for Multi-agent Exploration"
-    authors: Yuqian Fu, Yuanheng Zhu, Haoran Li, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
+    authors: Yuqian Fu, Yuanheng Zhu, Haoran Li, <strong>Zijie Zhao</strong>, Jiajun Chai, Dongbin Zhao
     category: other
     conference_short: IEEE TCDS
-    conference: IEEE Transactions on Cognitive and Developmental Systems <strong>(IEEE TCDS)</strong>, 2025.
+    conference: IEEE Transactions on Cognitive and Developmental Systems <strong>(TCDS)</strong>, 2025.
     pdf: https://ieeexplore.ieee.org/abstract/document/11029514/
     image: ./assets/img/teaser_cpig.png
     abstract: >

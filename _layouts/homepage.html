@@ -62,7 +62,7 @@
         <div class="social-icons">
         {% if site.google_scholar %}
         <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+          <i class="ai ai-google-scholar"></i>
         </a>  
         {% endif %}
 
@@ -89,6 +89,11 @@
           <i class="fab fa-x-twitter"></i>
         </a>
         {% endif %}
+
+        <a id="wechat-icon" style="margin: 0 5px 0 0; cursor: pointer;">
+          <i class="fab fa-weixin"></i>
+        </a>
+
         </div>
         <br>
 
@@ -140,5 +145,39 @@
       setupToggle(".bibtex-button");
     });
     </script>
+
+    <!-- WeChat QR Popup -->
+    <div id="wechat-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+         background:rgba(0,0,0,0.6); text-align:center; z-index:1000;">
+      <div id="wechat-popup-content" style="display:inline-block; margin-top:10%; background:white; padding:20px; border-radius:10px;">
+        <img src="./assets/img/wechat_qr.png" alt="WeChat QR" style="max-width:250px;"/>
+        <p style="margin-top:10px; font-size:14px; color:#333;"></p>
+      </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const wechatIcon = document.getElementById("wechat-icon");
+      const popup = document.getElementById("wechat-popup");
+      const popupContent = document.getElementById("wechat-popup-content");
+
+      // 点击微信图标 → 打开
+      wechatIcon.addEventListener("click", function() {
+        popup.style.display = "block";
+      });
+
+      // 点击遮罩层 → 关闭
+      popup.addEventListener("click", function() {
+        popup.style.display = "none";
+      });
+
+      // 阻止点击内容区时关闭
+      popupContent.addEventListener("click", function(event) {
+        event.stopPropagation();
+      });
+    });
+    </script>
+
+
   </body>
 </html>
