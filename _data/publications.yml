@@ -1,22 +1,143 @@
 main:
-
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
+  - title: Empowering Multi-Robot Cooperation via Sequential World Models
+    authors: <strong>Zijie Zhao</strong>, Honglei Guo, Shengqian Chen, Kaixuan Xu, Bo Jiang, Yuanheng Zhu, Dongbin Zhao
+    category: first_author
+    conference_short: arXiv
+    conference: arXiv preprint <strong>(arXiv)</strong>, 2025.
+    pdf: https://openreview.net/forum?id=IvUM6UwYCJ
+    code: https://github.com/zhaozijie2022/seqwm-marl
+    page: https://sites.google.com/view/seqwm-marl
     bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+    image: ./assets/img/teaser_seqwm.png
+    abstract: >
+      Model-based reinforcement learning (MBRL) has shown significant potential in robotics due to its high sample efficiency and planning capability. However, extending MBRL to multi-robot cooperation remains challenging due to the complexity of joint dynamics. To address this, we propose the Sequential World Model (SeqWM), a novel framework that integrates the sequential paradigm into model-based multi-agent reinforcement learning. SeqWM employs independent, sequentially structured agent-wise world models to decompose complex joint dynamics. Latent rollouts and decision-making are performed through sequential communication, where each agent generates its future trajectory and plans its actions based on the predictions of its predecessors. This design enables explicit intention sharing, enhancing cooperative performance, and reduces communication overhead to linear complexity. Results in challenging simulated environments (Bi-DexHands and Multi-Quad) show that SeqWM outperforms existing state-of-the-art model-free and model-based baselines in both overall performance and sample efficiency, while exhibiting advanced cooperative behaviors such as predictive adaptation and role division. Furthermore, SeqWM has been success fully deployed on physical quadruped robots, demonstrating its effectiveness in real-world multi-robot systems.
+    bibtex_show: |
+      @inproceedings{zhao2025seqwm,
+        title     = {Empowering Multi-Robot Cooperation via Sequential World Models},
+        author    = {Zhao, Zijie and Guo, Honglei and Chen, Shengqian and Xu, Kaixuan and Jiang, Bo and Zhu, Yuanheng and Zhao, Dongbin},
+        booktitle = {arXiv preprint},
+        year      = {2025}
+      }
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+  - title: Learning and Planning Multi-Agent Tasks via a MoE-based World Model
+    authors: <strong>Zijie Zhao</strong>, Zhongyue Zhao, Kaixuan Xu, Yuqian Fu, Jiajun Chai, Yuanheng Zhu, Dongbin Zhao
+    category: first_author
+    conference_short: NeurIPS
+    conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2025.
+    pdf: https://openreview.net/forum?id=fi24ry0BX5
+    code: https://github.com/zhaozijie2022/m3w-marl
+    page: https://sites.google.com/view/n3w-marl
+    image: ./assets/img/teaser_m3w.png
+    abstract: >
+      Multi-task multi-agent reinforcement learning (MT-MARL) aims to develop a single model capable of solving a diverse set of tasks. However, existing methods often fall short due to the substantial variation in optimal policies across tasks, making it challenging for a single policy model to generalize effectively. In contrast, we find that many tasks exhibit bounded similarity in their underlying dynamics—highly similar within certain groups (e.g., door-open/close) diverge significantly between unrelated tasks (e.g., door-open & object-catch). To leverage this property, we reconsider the role of modularity in multi-task learning, and propose M3W, a novel approach that applies mixture-of-experts (MoE) to world model instead of policy, enabling both learning and planning. For learning, it uses a SoftMoE-based dynamics model alongside a SparseMoE-based predictor to facilitate knowledge reuse across similar tasks while avoiding gradient conflicts across dissimilar tasks. For planning, it evaluates and optimizes actions using the predicted rollouts from the world model, without relying directly on a explicit policy model, thereby overcoming the limitations of policy-centric methods. As the first MoE-based multi-task world model, M3W demonstrates superior performance, sample efficiency, and multi-task adaptability, as validated on Bi-DexHands with 14 tasks and MA-Mujoco with 24 tasks.
+    bibtex_show: |
+      @inproceedings{zhao2025m3w,
+        title     = {Learning and Planning Multi-Agent Tasks via a MoE-based World Model},
+        author    = {Zhao, Zijie and Zhao, Zhongyue and Xu, Kaixuan and Fu, Yuqian and Chai, Jiajun and Zhu, Yuanheng and Zhao, Dongbin},
+        booktitle = {Advances in Neural Information Processing Systems},
+        year      = {2025}
+      }
+
+  - title: "Meta Learning Task Representation in Multiagent Reinforcement Learning: From Global Inference to Local Inference"
+    authors: <strong>Zijie Zhao</strong>, Yuqian Fu, Jiajun Chai, Yuanheng Zhu, Dongbin Zhao
+    category: first_author
+    conference_short: IEEE TNNLS
+    conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(IEEE TNNLS)</strong>, 2025.
+    pdf: https://ieeexplore.ieee.org/abstract/document/10905042
+    code: https://github.com/zhaozijie2022/mg2l
+    image: ./assets/img/teaser_mg2l.png
+    abstract: >
+      Multiagent meta reinforcement learning (MAMRL) enables multiagent systems (MASs) to adapt to multiple tasks. However, partial observability poses a significant challenge by hindering efficient task inference from agents' limited local experiences. To address this, we propose MG2L, a novel algorithm featuring a global-to-local (G2L) training scheme based on mutual information optimization (MIO). We first extend the centralized training and decentralized execution (CTDE) framework to MAMRL, and introduce a multilevel task encoder for joint global and local task inference. Building on this encoder, the MG2L scheme employs tailored loss functions to optimize task representations. For global inference, the MAS learns a centralized global representation by maximizing the MI between the representation and the task context. For local inference, we formulate conditional MI reduction to quantify the G2L gap. Agents then learn the local representation by minimizing this reduction. The MG2L scheme effectively harmonizes centralized training with decentralized execution, offering a versatile solution for MAMRL challenges. Additionally, we integrate a permutation-invariant attention (PIA) module into the task encoder to reduce sensitivity to behavior policy variations. Extensive experiments—including comparative analyses, ablation studies, meta-test evaluations, and visualizations—demonstrate MG2L's effectiveness.
+    bibtex_show: |
+      @article{zhao2025mg2l,
+        author={Zhao, Zijie and Fu, Yuqian and Chai, Jiajun and Zhu, Yuanheng and Zhao, Dongbin},
+        journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+        title={Meta Learning Task Representation in Multiagent Reinforcement Learning: From Global Inference to Local Inference}, 
+        year={2025},
+        volume={36},
+        number={8},
+        pages={14908-14921}
+      }
+  
+  - title: "Opinion dynamics of social networks with intermittent-influence leaders"
+    authors: <strong>Zijie Zhao</strong>, Lei Shi, Tong Li, Jinliang Shao, Yuhua Cheng
+    category: first_author
+    conference_short: IEEE TCSS
+    conference: IEEE Transactions on Computational Social Systems <strong>(IEEE TCSS)</strong>, 2025.
+    pdf: https://ieeexplore.ieee.org/abstract/document/9711916/
+    image: ./assets/img/teaser_opinion.png
+    abstract: >
+      This article constructs a leader-follower architecture by introducing intermittent-influence opinion leaders to the DeGroot model and analyzes the influence of this type of leaders on the evolution of opinions. Different from the existing studies where the leaders can convey their opinions to the followers uninterruptedly, the leaders in this article can only convey its opinion by broadcasting at some intermittent moments. First, we analyze the relationship between the leaders' broadcast moments and the consensus opinion of followers and explain that the marginal revenue of the broadcasts is diminishing. Second, we describe the connotation of assimilation and calculate the minimum number of broadcasts required for the leaders to assimilate the followers' opinions. Finally, aiming to make the consensus opinion of the followers and the leaders' as close as possible, we give an optimal strategy on how to select followers to broadcast. The correctness of theoretical results is verified by numerical simulations.
+    bibtex_show: |
+      @article{zhao2022opinion,
+        author={Zhao, Zijie and Shi, Lei and Li, Tong and Shao, Jinliang and Cheng, Yuhua},
+        journal={IEEE Transactions on Computational Social Systems}, 
+        title={Opinion Dynamics of Social Networks With Intermittent-Influence Leaders}, 
+        year={2023},
+        volume={10},
+        number={3},
+        pages={1073-1082}
+      }
+  
+  - title: "A Survey of Cooperative Multi-Agent Reinforcement Learning for Multi-Task Scenarios"
+    authors: Jiajun Chai, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
+    category: other
+    conference_short: AISE
+    conference: Artificial Intelligence Science and Engineering <strong>(AISE)</strong>, 2025.
+    pdf: https://ieeexplore.ieee.org/abstract/document/11077963/
+    image: ./assets/img/teaser_survey_chai.png
+    abstract: >
+      Cooperative multi-agent reinforcement learning (MARL) is a key technology for enabling cooperation in complex multi-agent systems. It has achieved remarkable progress in areas such as gaming, autonomous driving, and multi-robot control. Empowering cooperative MARL with multi-task decision-making capabilities is expected to further broaden its application scope. In multi-task scenarios, cooperative MARL algorithms need to address 3 types of multi-task problems: reward-related multi-task, arising from different reward functions; multi-domain multi-task, caused by differences in state and action spaces, state transition functions; and scalability-related multi-task, resulting from the dynamic variation in the number of agents. Most existing studies focus on scalability-related multi-task problems. However, with the increasing integration between large language models (LLMs) and multi-agent systems, a growing number of LLM-based multi-agent systems have emerged, enabling more complex multi-task cooperation. This paper provides a comprehensive review of the latest advances in this field. By combining multi-task reinforcement learning with cooperative MARL, we categorize and analyze the 3 major types of multi-task problems under multi-agent settings, offering more fine-grained classifications and summarizing key insights for each. In addition, we summarize commonly used benchmarks and discuss future directions of research in this area, which hold promise for further enhancing the multi-task cooperation capabilities of multi-agent systems and expanding their practical applications in the real world.
+    bibtex_show: |
+      @ARTICLE{chai2025survey,
+        author={Chai, Jiajun and Zhao, Zijie and Zhu, Yuanheng and Zhao, Dongbin},
+        journal={Artificial Intelligence Science and Engineering}, 
+        title={A Survey of Cooperative Multi-Agent Reinforcement Learning for Multi-Task Scenarios}, 
+        year={2025},
+        volume={1},
+        number={2},
+        pages={98-121},
+      }
+
+  - title: "CPIG: Leveraging Consistency Policy with Intention Guidance for Multi-agent Exploration"
+    authors: Yuqian Fu, Yuanheng Zhu, Haoran Li, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
+    category: other
+    conference_short: IEEE TCDS
+    conference: IEEE Transactions on Cognitive and Developmental Systems <strong>(IEEE TCDS)</strong>, 2025.
+    pdf: https://ieeexplore.ieee.org/abstract/document/11029514/
+    image: ./assets/img/teaser_cpig.png
+    abstract: >
+      Efficient exploration is crucial in cooperative multi-agent reinforcement learning (MARL), especially in sparse-reward settings. However, due to the reliance on the unimodal policy, existing methods are prone to falling into the local optima, hindering the effective exploration of better policies. Furthermore, in sparse-reward settings, each agent tends to receive a scarce reward, which poses significant challenges to inter-agent cooperation. This not only increases the difficulty of policy learning but also degrades the overall performance of multi-agent tasks. To address these issues, we propose a Consistency Policy with Intention Guidance (CPIG), with two primary components: (a) introducing a multimodal policy to enhance the agent’s exploration capability, and (b) sharing the intention among agents to foster agent cooperation. For component (a), CPIG incorporates a Consistency model as the policy, leveraging its multimodal nature and stochastic characteristics to facilitate exploration. Regarding component (b), we introduce an Intention Learner to deduce the intention on the global state from each agent’s local observation. This intention then serves as a guidance for the Consistency Policy, promoting cooperation among agents. The proposed method is evaluated in multi-agent particle environments (MPE) and multi-agent MuJoCo (MAMuJoCo). Empirical results demonstrate that our method not only achieves comparable performance to various baselines in dense-reward environments but also significantly enhances performance in sparse-reward settings, outperforming state-of-the-art (SOTA) algorithms by 20%. The code is available here.
+    bibtex_show: |
+      @article{fu2025cpig,
+        author={Fu, Yuqian and Zhu, Yuanheng and Li, Haoran and Zhao, Zijie and Chai, Jiajun and Zhao, Dongbin},
+        journal={IEEE Transactions on Cognitive and Developmental Systems}, 
+        title={CPIG: Leveraging Consistency Policy with Intention Guidance for Multi-agent Exploration}, 
+        year={2025},
+        volume={},
+        number={},
+        pages={1-13},
+      }
+
+
+  - title: "Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning"
+    authors: Shangjing Huang, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
+    category: other
+    conference_short: DDCLS
+    conference: IEEE 13th Data Driven Control and Learning Systems Conference <strong>(DDCLS)</strong>, 2024.
+    pdf: https://ieeexplore.ieee.org/abstract/document/10606742/
+    image: ./assets/img/teaser_ddcls_huang.png
+    abstract: >
+      In the realm of Multi-Agent Reinforcement Learning (MARL), the challenge of ensuring effective coordination in different multi -agent teams remains a significant hurdle. Existing methods often fall short in generalizing learned policies to novel team compositions, sizes, and capabilities. Addressing this gap, our study focuses on systems with variable and obscure attribute compositions, harnessing a context-based meta-reinforcement learning framework. The approach is twofold: context inference and context-based decision-making. Agents interpret historical data to identify the system's attribute composition, guiding their collective efforts. The accuracy of these inferences is crucial, prompting us to integrate contrastive learning to refine the context inference network via unsupervised training. In the process of decision-making, agents integrate the inferred context with the observation features to select the optimal strategy. Our empirical results underscore the method's efficacy in bolstering decision-making efficiency and precision amidst attribute diversity, marking a significant stride in adaptive teaming for robust multi-robot deployments in dynamic real-world scenarios.
+    bibtex_show: |
+      @inproceedings{huang2024adaptive,
+        author={Huang, Shangjing and Zhao, Zijie and Zhu, Yuanheng and Zhao, Dongbin},
+        booktitle={2024 IEEE 13th Data Driven Control and Learning Systems Conference (DDCLS)}, 
+        title={Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning}, 
+        year={2024},
+        volume={},
+        number={},
+        pages={1780-1787},
+      }
+
+

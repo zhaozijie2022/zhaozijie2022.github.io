@@ -1,18 +1,26 @@
+html, body {
+  // font-family: "Helvetica Neue", Arial, sans-serif; /* 全局字体 */
+  font-size: 18px;      /* 全局字号 */
+  line-height: 1.6;     /* 全局行距，推荐1.4~1.8，更易读 */
+  // color: #222;          /* 全局文字颜色 */
+}
+
 .pub-row {
   display: flex; 
   align-items: center;}
 
-.social-icons a{
+.social-icons a {
   display:inline-block;
-  height:2.4rem;
-  width:2.4rem;
+  height:3rem;        /* 原来 2.4rem → 放大 */
+  width:3rem;
   background-color:transparent;
   color:#043361!important;
   border-radius:100%;
   text-align:center;
-  font-size:1.15rem;
-  line-height:2.5rem;
-  margin-right:1rem}
+  font-size:1.5rem;   /* 图标字体放大 */
+  line-height:3rem;   /* 保持居中 */
+  margin-right:1rem;
+}
 
 @media (prefers-color-scheme: dark) { .social-icons a {color: #3eb7f0 !important; }}
 
@@ -104,7 +112,7 @@
   background-color:#000}
 
 email {
-    font-size: 14px;
+    font-size: 85%;
     font-family: "Ubuntu Mono";
 }
 
@@ -296,7 +304,8 @@ a:hover small {
 }
 
 .wrapper {
-  width:960px;
+  width:75%;      /* 占浏览器窗口宽度的 90% */
+  max-width:1400px;  /* 同时设置一个最大宽度，避免超大屏幕太宽 */
   margin:0 auto;
 }
 
@@ -356,7 +365,9 @@ img {
 }
 
 header {
-  width:232px;
+  width:25%;
+  min-width: 200px;     /* 不要太窄 */
+  max-width: 280px;     /* 也不要太宽 */
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -432,7 +443,7 @@ header ul a strong {
 }
 
 section {
-  width:650px;
+  width:70%;
   float:right;
   padding-top:4.0em;
   padding-bottom:50px;
@@ -594,4 +605,29 @@ footer {
   margin-left: 0px;
   display:none;
   font-family: monospace;
+}
+
+.abstract-button, .bibtex-button {
+  cursor: pointer;
+}
+
+.bibtex-content {
+  display: none;
+  margin-top: 8px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  border-radius: 4px;
+}
+
+.abstract-content {
+  display: none;
+  margin-top: 8px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
 }

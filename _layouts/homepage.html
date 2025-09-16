@@ -119,5 +119,26 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
+    <!-- ===== Toggle Script for Abstract & BibTeX ===== -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function setupToggle(buttonClass) {
+        const buttons = document.querySelectorAll(buttonClass);
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", function() {
+            const content = this.nextElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+              content.style.display = "block";
+            } else {
+              content.style.display = "none";
+            }
+          });
+        });
+      }
+
+      setupToggle(".abstract-button");
+      setupToggle(".bibtex-button");
+    });
+    </script>
   </body>
 </html>
