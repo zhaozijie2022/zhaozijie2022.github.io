@@ -4,7 +4,7 @@ main:
     category: first_author
     conference_short: arXiv
     conference: arXiv preprint <strong>(arXiv)</strong>, 2025.
-    pdf: https://openreview.net/forum?id=IvUM6UwYCJ
+    pdf: https://arxiv.org/pdf/2509.13095
     code: https://github.com/zhaozijie2022/seqwm-marl
     page: https://sites.google.com/view/seqwm-marl
     bibtex: https://bib.yliu.me/MICCAI23.txt
@@ -13,10 +13,13 @@ main:
       Model-based reinforcement learning (MBRL) has shown significant potential in robotics due to its high sample efficiency and planning capability. However, extending MBRL to multi-robot cooperation remains challenging due to the complexity of joint dynamics. To address this, we propose the Sequential World Model (SeqWM), a novel framework that integrates the sequential paradigm into model-based multi-agent reinforcement learning. SeqWM employs independent, sequentially structured agent-wise world models to decompose complex joint dynamics. Latent rollouts and decision-making are performed through sequential communication, where each agent generates its future trajectory and plans its actions based on the predictions of its predecessors. This design enables explicit intention sharing, enhancing cooperative performance, and reduces communication overhead to linear complexity. Results in challenging simulated environments (Bi-DexHands and Multi-Quad) show that SeqWM outperforms existing state-of-the-art model-free and model-based baselines in both overall performance and sample efficiency, while exhibiting advanced cooperative behaviors such as predictive adaptation and role division. Furthermore, SeqWM has been success fully deployed on physical quadruped robots, demonstrating its effectiveness in real-world multi-robot systems.
     bibtex_show: |
       @inproceedings{zhao2025seqwm,
-        title     = {Empowering Multi-Robot Cooperation via Sequential World Models},
-        author    = {Zhao, Zijie and Guo, Honglei and Chen, Shengqian and Xu, Kaixuan and Jiang, Bo and Zhu, Yuanheng and Zhao, Dongbin},
-        booktitle = {arXiv preprint},
-        year      = {2025}
+          title={Empowering Multi-Robot Cooperation via Sequential World Models}, 
+          author={Zijie Zhao and Honglei Guo and Shengqian Chen and Kaixuan Xu and Bo Jiang and Yuanheng Zhu and Dongbin Zhao},
+          year={2025},
+          eprint={2509.13095},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2509.13095}, 
       }
 
   - title: Learning and Planning Multi-Agent Tasks via a MoE-based World Model
