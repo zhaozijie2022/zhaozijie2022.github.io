@@ -8,7 +8,7 @@ main:
     code: https://github.com/zhaozijie2022/seqwm-marl
     page: https://sites.google.com/view/seqwm-marl
     bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_seqwm.png
+    image: ./assets/img/gifs/teaser_seqwm.gif
     abstract: >
       Model-based reinforcement learning (MBRL) has shown significant potential in robotics due to its high sample efficiency and planning capability. However, extending MBRL to multi-robot cooperation remains challenging due to the complexity of joint dynamics. To address this, we propose the Sequential World Model (SeqWM), a novel framework that integrates the sequential paradigm into model-based multi-agent reinforcement learning. SeqWM employs independent, sequentially structured agent-wise world models to decompose complex joint dynamics. Latent rollouts and decision-making are performed through sequential communication, where each agent generates its future trajectory and plans its actions based on the predictions of its predecessors. This design enables explicit intention sharing, enhancing cooperative performance, and reduces communication overhead to linear complexity. Results in challenging simulated environments (Bi-DexHands and Multi-Quad) show that SeqWM outperforms existing state-of-the-art model-free and model-based baselines in both overall performance and sample efficiency, while exhibiting advanced cooperative behaviors such as predictive adaptation and role division. Furthermore, SeqWM has been success fully deployed on physical quadruped robots, demonstrating its effectiveness in real-world multi-robot systems.
     bibtex_show: |
@@ -29,8 +29,7 @@ main:
     conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2025.
     pdf: https://openreview.net/forum?id=fi24ry0BX5
     code: https://github.com/zhaozijie2022/m3w-marl
-    page: https://sites.google.com/view/n3w-marl
-    image: ./assets/img/teaser_m3w.png
+    image: ./assets/img/gifs/teaser_m3w.gif
     abstract: >
       Multi-task multi-agent reinforcement learning (MT-MARL) aims to develop a single model capable of solving a diverse set of tasks. However, existing methods often fall short due to the substantial variation in optimal policies across tasks, making it challenging for a single policy model to generalize effectively. In contrast, we find that many tasks exhibit bounded similarity in their underlying dynamics—highly similar within certain groups (e.g., door-open/close) diverge significantly between unrelated tasks (e.g., door-open & object-catch). To leverage this property, we reconsider the role of modularity in multi-task learning, and propose M3W, a novel approach that applies mixture-of-experts (MoE) to world model instead of policy, enabling both learning and planning. For learning, it uses a SoftMoE-based dynamics model alongside a SparseMoE-based predictor to facilitate knowledge reuse across similar tasks while avoiding gradient conflicts across dissimilar tasks. For planning, it evaluates and optimizes actions using the predicted rollouts from the world model, without relying directly on a explicit policy model, thereby overcoming the limitations of policy-centric methods. As the first MoE-based multi-task world model, M3W demonstrates superior performance, sample efficiency, and multi-task adaptability, as validated on Bi-DexHands with 14 tasks and MA-Mujoco with 24 tasks.
     bibtex_show: |
@@ -88,7 +87,7 @@ main:
     conference_short: AISE
     conference: Artificial Intelligence Science and Engineering <strong>(AISE)</strong>, 2025.
     pdf: https://ieeexplore.ieee.org/abstract/document/11077963/
-    image: ./assets/img/teaser_survey_chai.png
+    image: ./assets/img/others/teaser_survey_chai.png
     abstract: >
       Cooperative multi-agent reinforcement learning (MARL) is a key technology for enabling cooperation in complex multi-agent systems. It has achieved remarkable progress in areas such as gaming, autonomous driving, and multi-robot control. Empowering cooperative MARL with multi-task decision-making capabilities is expected to further broaden its application scope. In multi-task scenarios, cooperative MARL algorithms need to address 3 types of multi-task problems: reward-related multi-task, arising from different reward functions; multi-domain multi-task, caused by differences in state and action spaces, state transition functions; and scalability-related multi-task, resulting from the dynamic variation in the number of agents. Most existing studies focus on scalability-related multi-task problems. However, with the increasing integration between large language models (LLMs) and multi-agent systems, a growing number of LLM-based multi-agent systems have emerged, enabling more complex multi-task cooperation. This paper provides a comprehensive review of the latest advances in this field. By combining multi-task reinforcement learning with cooperative MARL, we categorize and analyze the 3 major types of multi-task problems under multi-agent settings, offering more fine-grained classifications and summarizing key insights for each. In addition, we summarize commonly used benchmarks and discuss future directions of research in this area, which hold promise for further enhancing the multi-task cooperation capabilities of multi-agent systems and expanding their practical applications in the real world.
     bibtex_show: |
@@ -108,7 +107,7 @@ main:
     conference_short: IEEE TCDS
     conference: IEEE Transactions on Cognitive and Developmental Systems <strong>(TCDS)</strong>, 2025.
     pdf: https://ieeexplore.ieee.org/abstract/document/11029514/
-    image: ./assets/img/teaser_cpig.png
+    image: ./assets/img/others/teaser_cpig.png
     abstract: >
       Efficient exploration is crucial in cooperative multi-agent reinforcement learning (MARL), especially in sparse-reward settings. However, due to the reliance on the unimodal policy, existing methods are prone to falling into the local optima, hindering the effective exploration of better policies. Furthermore, in sparse-reward settings, each agent tends to receive a scarce reward, which poses significant challenges to inter-agent cooperation. This not only increases the difficulty of policy learning but also degrades the overall performance of multi-agent tasks. To address these issues, we propose a Consistency Policy with Intention Guidance (CPIG), with two primary components: (a) introducing a multimodal policy to enhance the agent’s exploration capability, and (b) sharing the intention among agents to foster agent cooperation. For component (a), CPIG incorporates a Consistency model as the policy, leveraging its multimodal nature and stochastic characteristics to facilitate exploration. Regarding component (b), we introduce an Intention Learner to deduce the intention on the global state from each agent’s local observation. This intention then serves as a guidance for the Consistency Policy, promoting cooperation among agents. The proposed method is evaluated in multi-agent particle environments (MPE) and multi-agent MuJoCo (MAMuJoCo). Empirical results demonstrate that our method not only achieves comparable performance to various baselines in dense-reward environments but also significantly enhances performance in sparse-reward settings, outperforming state-of-the-art (SOTA) algorithms by 20%. The code is available here.
     bibtex_show: |
@@ -129,7 +128,7 @@ main:
     conference_short: DDCLS
     conference: IEEE 13th Data Driven Control and Learning Systems Conference <strong>(DDCLS)</strong>, 2024.
     pdf: https://ieeexplore.ieee.org/abstract/document/10606742/
-    image: ./assets/img/teaser_ddcls_huang.png
+    image: ./assets/img/others/teaser_ddcls_huang.png
     abstract: >
       In the realm of Multi-Agent Reinforcement Learning (MARL), the challenge of ensuring effective coordination in different multi -agent teams remains a significant hurdle. Existing methods often fall short in generalizing learned policies to novel team compositions, sizes, and capabilities. Addressing this gap, our study focuses on systems with variable and obscure attribute compositions, harnessing a context-based meta-reinforcement learning framework. The approach is twofold: context inference and context-based decision-making. Agents interpret historical data to identify the system's attribute composition, guiding their collective efforts. The accuracy of these inferences is crucial, prompting us to integrate contrastive learning to refine the context inference network via unsupervised training. In the process of decision-making, agents integrate the inferred context with the observation features to select the optimal strategy. Our empirical results underscore the method's efficacy in bolstering decision-making efficiency and precision amidst attribute diversity, marking a significant stride in adaptive teaming for robust multi-robot deployments in dynamic real-world scenarios.
     bibtex_show: |
@@ -141,6 +140,23 @@ main:
         volume={},
         number={},
         pages={1780-1787},
+      }
+
+  - title: "CriticSearch: Fine-Grained Credit Assignment for Search Agents via a Retrospective Critic"
+    authors: Yaocheng Zhang, Haohuan Huang, Zijun Song, Yuanheng Zhu, <strong>Zijie Zhao</strong>, Qichao Zhang, Dongbin Zhao
+    category: other
+    conference_short: arXiv
+    conference: arXiv preprint <strong>(arXiv)</strong>, 2025.
+    pdf: https://arxiv.org/pdf/2511.12159
+    image: ./assets/img/others/teaser_criticsearch_zhang.png
+    abstract: >
+      Tool-Integrated Reasoning (TIR) with search engines enables large language models to iteratively retrieve up-to-date external knowledge, enhancing adaptability and generalization in complex question-answering tasks. However, existing search agent pipelines typically depend on reinforcement learning based optimization, which often suffers from sparse outcome rewards, leading to inefficient exploration and unstable training. We introduce CriticSearch, a fine-grained credit-assignment framework that supplies dense, turn-level feedback via a retrospective critic mechanism. During training, a frozen, asymmetric critique LLM retrospectively evaluates each turn using privileged information from the full trajectory and gold answers, converting these assessments into stable, dense rewards that guide policy improvement. Experimental results across diverse multi-hop reasoning benchmarks demonstrate that CriticSearch consistently outperforms existing baselines, achieving faster convergence, improved training stability, and higher performance.
+    bibtex_show: |
+      @article{zhang2025criticsearch,
+        title={CriticSearch: Fine-Grained Credit Assignment for Search Agents via a Retrospective Critic},
+        author={Zhang, Yaocheng and Huang, Haohuan and Song, Zijun and Zhu, Yuanheng and Zhang, Qichao and Zhao, Zijie and Zhao, Dongbin},
+        journal={arXiv preprint arXiv:2511.12159},
+        year={2025}
       }
 
 
