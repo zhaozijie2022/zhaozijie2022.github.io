@@ -5,7 +5,8 @@
 <!-- First-author publications -->
 <h3>Main Contributions</h3>
 <ol class="bibliography">
-{% for link in site.data.publications.main %}
+{% assign first_author_pubs = site.data.publications.main | where: "category", "first_author" %}
+{% for link in first_author_pubs %}
   {% if link.category == "first_author" %}
   <li>
   <div class="pub-row">
@@ -53,7 +54,9 @@
     </div>
   </div>
   </li>
+  {% unless forloop.last %}
   <br>
+  {% endunless %}
   {% endif %}
 {% endfor %}
 </ol>
@@ -61,7 +64,8 @@
 <!-- Other publications -->
 <h3>Others</h3>
 <ol class="bibliography">
-{% for link in site.data.publications.main %}
+{% assign other_pubs = site.data.publications.main | where: "category", "other" %}
+{% for link in other_pubs %}
   {% if link.category == "other" %}
   <li>
   <div class="pub-row">
@@ -109,7 +113,9 @@
     </div>
   </div>
   </li>
+  {% unless forloop.last %}
   <br>
+  {% endunless %}
   {% endif %}
 {% endfor %}
 </ol>

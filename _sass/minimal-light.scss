@@ -224,7 +224,7 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
-        width: 45%;
+        width: 80%;
         padding: 20px;
         // border: 1px solid #ddd;
         // padding: 3px;
@@ -233,7 +233,7 @@ papertitle {
 
     #header .image.avatar {
       margin: 0 0 1em 0;
-      width: 8.00em;
+      width: 8.00rem;
     }
 
 h3, h4, h5, h6 {
@@ -472,7 +472,7 @@ footer {
 @media print, screen and (max-width: 960px) {
 
   .pub-row {
-  display: flex; 
+  display: flex;
   align-items: center;}
 
   div.wrapper {
@@ -488,7 +488,13 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    float: none;              // 关键 1：取消左浮动
+    position: static;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 20px;      // 关键 2：整体居中
+    padding: 0;
+    text-align: center;       // 关键 3：内容居中
   }
 
   section {
@@ -517,11 +523,11 @@ footer {
   #head1o2 {
     visibility: hidden;
   }
-      
+
   #head2o2 {
     visibility: hidden;
   }
-  
+
 }
 
 @media print, screen and (max-width: 960px) {
@@ -531,7 +537,7 @@ footer {
   }
 
   .pub-row {
-  display: flex; 
+  display: flex;
   align-items: center;}
 
   header {
@@ -539,7 +545,7 @@ footer {
   }
 
   header ul, header p.view {
-    
+
   }
 
   pre, code {
@@ -550,7 +556,7 @@ footer {
 @media print, screen and (max-width: 480px) {
 
   .pub-row {
-    display: block; 
+    display: block;
     align-items: center;}
 
   body {
@@ -573,7 +579,7 @@ footer {
   #head1o2 {
     visibility: hidden;
   }
-  
+
   #head2o2 {
     visibility: hidden;
   }
