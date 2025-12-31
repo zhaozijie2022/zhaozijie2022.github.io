@@ -54,11 +54,15 @@
         <br>
         {% endif %}
         {% if site.email %}
-        <email>{{ site.email }}</email>
+          {% assign emails = site.email | split: ' ' %}
+          {% for email in emails %}
+            <p class="email-line">
+              <a href="mailto:{{ email }}">{{ email }}</a>
+            </p>
+          {% endfor %}
         {% endif %}
-
-        <br>
-        <br>
+<!--        <br>-->
+<!--        <br>-->
         <div class="social-icons">
         {% if site.google_scholar %}
         <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
