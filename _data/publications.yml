@@ -2,8 +2,8 @@ main:
   - title: Empowering Multi-Robot Cooperation via Sequential World Models
     authors: <strong>Zijie Zhao</strong>, Honglei Guo, Shengqian Chen, Kaixuan Xu, Bo Jiang, Yuanheng Zhu, Dongbin Zhao
     category: first_author
-    conference_short: arXiv
-    conference: arXiv preprint <strong>(arXiv)</strong>, 2025.
+    conference_short: ICLR
+    conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2509.13095
     code: https://github.com/zhaozijie2022/seqwm-marl
     page: https://sites.google.com/view/seqwm-marl
