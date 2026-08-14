@@ -1,4 +1,28 @@
 main:
+  - title: "TrustLoco: Robust Quadrupedal Parkour via Trust-Aware Vision-Proprioception Fusion"
+    authors: "Shengqian Chen<sup>*</sup>, <strong>Zijie Zhao<sup>*</sup></strong>, Xiaoxu Wang, Yuanheng Zhu, Dongbin Zhao"
+    category: first_author
+    conference_short: AAAI submitted
+    conference: AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2027.
+    pdf: 
+    code:
+    # image: ./assets/img/gifs/teaser_trustloco.gif
+    image: ./assets/img/first_author/teaser_trustloco.png
+    abstract: 
+    bibtex_show: 
+
+  - title: "LocoWM: High-Precision Locomotion through World-Model-Guided Residual Adaptation"
+    authors: <strong>Zijie Zhao<sup>*</sup></strong>, Shengqian Chen<sup>*</sup>, Xiaoxu Wang, Han Jiang, Yuanheng Zhu, Dongbin Zhao
+    category: first_author
+    conference_short: CoRL submitted
+    conference: Conference on Robot Learning <strong>(CoRL)</strong>, 2026.
+    pdf: 
+    code:
+    # image: ./assets/img/first_author/teaser_locowm.gif
+    image: ./assets/img/first_author/teaser_locowm.png
+    abstract: 
+    bibtex_show: 
+
   - title: Empowering Multi-Robot Cooperation via Sequential World Models
     authors: <strong>Zijie Zhao</strong>, Honglei Guo, Shengqian Chen, Kaixuan Xu, Bo Jiang, Yuanheng Zhu, Dongbin Zhao
     category: first_author
@@ -6,9 +30,8 @@ main:
     conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2509.13095
     code: https://github.com/zhaozijie2022/seqwm-marl
-    page: https://sites.google.com/view/seqwm-marl
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/gifs/teaser_seqwm.gif
+    # image: ./assets/img/gifs/teaser_seqwm.gif
+    image: ./assets/img/first_author/teaser_seqwm.png
     abstract: >
       Model-based reinforcement learning (MBRL) has shown significant potential in robotics due to its high sample efficiency and planning capability. However, extending MBRL to multi-robot cooperation remains challenging due to the complexity of joint dynamics. To address this, we propose the Sequential World Model (SeqWM), a novel framework that integrates the sequential paradigm into model-based multi-agent reinforcement learning. SeqWM employs independent, sequentially structured agent-wise world models to decompose complex joint dynamics. Latent rollouts and decision-making are performed through sequential communication, where each agent generates its future trajectory and plans its actions based on the predictions of its predecessors. This design enables explicit intention sharing, enhancing cooperative performance, and reduces communication overhead to linear complexity. Results in challenging simulated environments (Bi-DexHands and Multi-Quad) show that SeqWM outperforms existing state-of-the-art model-free and model-based baselines in both overall performance and sample efficiency, while exhibiting advanced cooperative behaviors such as predictive adaptation and role division. Furthermore, SeqWM has been success fully deployed on physical quadruped robots, demonstrating its effectiveness in real-world multi-robot systems.
     bibtex_show: |
@@ -29,7 +52,8 @@ main:
     conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2025.
     pdf: https://openreview.net/forum?id=fi24ry0BX5
     code: https://github.com/zhaozijie2022/m3w-marl
-    image: ./assets/img/gifs/teaser_m3w.gif
+    # image: ./assets/img/gifs/teaser_m3w.gif
+    image: ./assets/img/first_author/teaser_m3w.png
     abstract: >
       Multi-task multi-agent reinforcement learning (MT-MARL) aims to develop a single model capable of solving a diverse set of tasks. However, existing methods often fall short due to the substantial variation in optimal policies across tasks, making it challenging for a single policy model to generalize effectively. In contrast, we find that many tasks exhibit bounded similarity in their underlying dynamics—highly similar within certain groups (e.g., door-open/close) diverge significantly between unrelated tasks (e.g., door-open & object-catch). To leverage this property, we reconsider the role of modularity in multi-task learning, and propose M3W, a novel approach that applies mixture-of-experts (MoE) to world model instead of policy, enabling both learning and planning. For learning, it uses a SoftMoE-based dynamics model alongside a SparseMoE-based predictor to facilitate knowledge reuse across similar tasks while avoiding gradient conflicts across dissimilar tasks. For planning, it evaluates and optimizes actions using the predicted rollouts from the world model, without relying directly on a explicit policy model, thereby overcoming the limitations of policy-centric methods. As the first MoE-based multi-task world model, M3W demonstrates superior performance, sample efficiency, and multi-task adaptability, as validated on Bi-DexHands with 14 tasks and MA-Mujoco with 24 tasks.
     bibtex_show: |
@@ -47,7 +71,7 @@ main:
     conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(TNNLS)</strong>, 2025.
     pdf: https://ieeexplore.ieee.org/abstract/document/10905042
     code: https://github.com/zhaozijie2022/mg2l
-    image: ./assets/img/teaser_mg2l.png
+    image: ./assets/img/first_author/teaser_mg2l.png
     abstract: >
       Multiagent meta reinforcement learning (MAMRL) enables multiagent systems (MASs) to adapt to multiple tasks. However, partial observability poses a significant challenge by hindering efficient task inference from agents' limited local experiences. To address this, we propose MG2L, a novel algorithm featuring a global-to-local (G2L) training scheme based on mutual information optimization (MIO). We first extend the centralized training and decentralized execution (CTDE) framework to MAMRL, and introduce a multilevel task encoder for joint global and local task inference. Building on this encoder, the MG2L scheme employs tailored loss functions to optimize task representations. For global inference, the MAS learns a centralized global representation by maximizing the MI between the representation and the task context. For local inference, we formulate conditional MI reduction to quantify the G2L gap. Agents then learn the local representation by minimizing this reduction. The MG2L scheme effectively harmonizes centralized training with decentralized execution, offering a versatile solution for MAMRL challenges. Additionally, we integrate a permutation-invariant attention (PIA) module into the task encoder to reduce sensitivity to behavior policy variations. Extensive experiments—including comparative analyses, ablation studies, meta-test evaluations, and visualizations—demonstrate MG2L's effectiveness.
     bibtex_show: |
@@ -67,7 +91,7 @@ main:
     conference_short: IEEE TCSS
     conference: IEEE Transactions on Computational Social Systems <strong>(TCSS)</strong>, 2023.
     pdf: https://ieeexplore.ieee.org/abstract/document/9711916/
-    image: ./assets/img/teaser_opinion.png
+    image: ./assets/img/first_author/teaser_opinion.png
     abstract: >
       This article constructs a leader-follower architecture by introducing intermittent-influence opinion leaders to the DeGroot model and analyzes the influence of this type of leaders on the evolution of opinions. Different from the existing studies where the leaders can convey their opinions to the followers uninterruptedly, the leaders in this article can only convey its opinion by broadcasting at some intermittent moments. First, we analyze the relationship between the leaders' broadcast moments and the consensus opinion of followers and explain that the marginal revenue of the broadcasts is diminishing. Second, we describe the connotation of assimilation and calculate the minimum number of broadcasts required for the leaders to assimilate the followers' opinions. Finally, aiming to make the consensus opinion of the followers and the leaders' as close as possible, we give an optimal strategy on how to select followers to broadcast. The correctness of theoretical results is verified by numerical simulations.
     bibtex_show: |
@@ -81,6 +105,28 @@ main:
         pages={1073-1082}
       }
   
+  - title: "G0.5: One Autoregressive Stream for Robot Reasoning and Action"
+    authors: Galaxea AI Research
+    category: other
+    conference_short: Tech Report
+    conference:  Technical Report, 2026.
+    pdf: https://arxiv.org/pdf/2608.11739
+    code: https://github.com/OpenGalaxea/GalaxeaVLA
+    image: ./assets/img/others/teaser_g05.png
+    abstract: >
+      "The prevailing recipe for Vision-Language-Action (VLA) models couples a pretrained VLM with a separately trained flow-matching action expert. This makes the VLM a context encoder rather than a decision-maker. Instead, we argue for focusing on the VLM backbone: a unified model with a single set of weights that generates both reasoning and actions within a single autoregressive token stream. We introduce G0.5, a pretrained autoregressive VLA in which a single transformer decoder emits reasoning and action tokens under a single objective. Three components make this tractable at foundation-model scale: a learnable cross-embodiment action tokenizer that maps heterogeneous robot actions into a shared vocabulary; a native chain-of-thought stream interleaving task decomposition, object grounding, and action hints with action tokens; and a visual memory module that injects multi-second history through the vision encoder. Because reasoning and action share a single set of weights, the pretrained VLM’s capabilities carry over to physical behavior: the model follows instructions closely, and prompts directly steer action granularity, task horizon, and out-of-distribution scene handling without further training. Pretrained on a large collection of robot datasets together with VQA samples, G0.5 surpasses state-of-the-art models across 7 independent regimes: real-world fine-tuning on R1-Lite/R1-Pro robots (76.7% vs. 53.3% for 𝜋0.5 and 24.4% for GR00T-N1.7), the 2025 BEHAVIOR Challenge on 50 long-horizon household mobile manipulation tasks using a generalist policy (31.4% vs. 26.3% for 𝜋0.5 and 26.1% for the challenge winner), DROID post-training followed by zero-shot transfer to an unseen environment and objects (82.5%), a language-following Pick-and-Place benchmark, LIBERO (98.9%), RoboTwin 2.0 (93.3%), and SimplerEnv-Bridge (87.3%)."
+    bibtex_show: |
+      @misc{liu2026g05autoregressivestreamrobot,
+        title={G0.5: One Autoregressive Stream for Robot Reasoning and Action},
+        author={Yicheng Liu and Zibin Dong and Baijun Ye and Tianyuan Yuan and Tao Jiang and Anqi Yang and Shicheng Cao and Haonan Liu and Yue Sun and Zihan Guo and Xiao Liu and Ke Dong and Changxun Pan and Chenru Wu and Tailai Cheng and Xiaoshu Ren and Xinlei Zhang and Jianning Cui and Zijie Zhao and Haoyu Zhang and Kaiming Xu and Haodong Yang and Bowen Zhang and Jiahui Niu and Shaoting Zhu and Shiduo Zhang and Hang Zhao},
+        year={2026},
+        eprint={2608.11739},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2608.11739}
+      }
+
+
   - title: "A Survey of Cooperative Multi-Agent Reinforcement Learning for Multi-Task Scenarios"
     authors: Jiajun Chai, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
     category: other
@@ -109,7 +155,7 @@ main:
     pdf: https://ieeexplore.ieee.org/abstract/document/11029514/
     image: ./assets/img/others/teaser_cpig.png
     abstract: >
-      Efficient exploration is crucial in cooperative multi-agent reinforcement learning (MARL), especially in sparse-reward settings. However, due to the reliance on the unimodal policy, existing methods are prone to falling into the local optima, hindering the effective exploration of better policies. Furthermore, in sparse-reward settings, each agent tends to receive a scarce reward, which poses significant challenges to inter-agent cooperation. This not only increases the difficulty of policy learning but also degrades the overall performance of multi-agent tasks. To address these issues, we propose a Consistency Policy with Intention Guidance (CPIG), with two primary components: (a) introducing a multimodal policy to enhance the agent’s exploration capability, and (b) sharing the intention among agents to foster agent cooperation. For component (a), CPIG incorporates a Consistency model as the policy, leveraging its multimodal nature and stochastic characteristics to facilitate exploration. Regarding component (b), we introduce an Intention Learner to deduce the intention on the global state from each agent’s local observation. This intention then serves as a guidance for the Consistency Policy, promoting cooperation among agents. The proposed method is evaluated in multi-agent particle environments (MPE) and multi-agent MuJoCo (MAMuJoCo). Empirical results demonstrate that our method not only achieves comparable performance to various baselines in dense-reward environments but also significantly enhances performance in sparse-reward settings, outperforming state-of-the-art (SOTA) algorithms by 20%. The code is available here.
+      Efficient exploration is crucial in cooperative multi-agent reinforcement learning (MARL), especially in sparse-reward settings. However, due to the reliance on the unimodal policy, existing methods are prone to falling into the local optima, hindering the effective exploration of better policies. Furthermore, in sparse-reward settings, each agent tends to receive a scarce reward, which poses significant challenges to inter-agent cooperation. This not only increases the difficulty of policy learning but also degrades the overall performance of multi-agent tasks. To address these issues, we propose a Consistency Policy with Intention Guidance (CPIG), with two primary components: (a) introducing a multimodal policy to enhance the agent’s exploration capability, and (b) sharing the intention among agents to foster agent cooperation. For component (a), CPIG incorporates a Consistency model as the policy, leveraging its multimodal nature and stochastic characteristics to facilitate exploration. Regarding component (b), we introduce an Intention Learner to deduce the intention on the global state from each agent’s local observation. This intention then serves as a guidance for the Consistency Policy, promoting cooperation among agents. The proposed method is evaluated in multi-agent particle environments (MPE) and multi-agent MuJoCo (MAMuJoCo). Empirical results demonstrate that our method not only achieves comparable performance to various baselines in dense-reward environments but also significantly enhances performance in sparse-reward settings, outperforming state-of-the-art (SOTA) algorithms by 20%.
     bibtex_show: |
       @article{fu2025cpig,
         author={Fu, Yuqian and Zhu, Yuanheng and Li, Haoran and Zhao, Zijie and Chai, Jiajun and Zhao, Dongbin},
@@ -122,31 +168,31 @@ main:
       }
 
 
-  - title: "Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning"
-    authors: Shangjing Huang, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
-    category: other
-    conference_short: DDCLS
-    conference: IEEE 13th Data Driven Control and Learning Systems Conference <strong>(DDCLS)</strong>, 2024.
-    pdf: https://ieeexplore.ieee.org/abstract/document/10606742/
-    image: ./assets/img/others/teaser_ddcls_huang.png
-    abstract: >
-      In the realm of Multi-Agent Reinforcement Learning (MARL), the challenge of ensuring effective coordination in different multi -agent teams remains a significant hurdle. Existing methods often fall short in generalizing learned policies to novel team compositions, sizes, and capabilities. Addressing this gap, our study focuses on systems with variable and obscure attribute compositions, harnessing a context-based meta-reinforcement learning framework. The approach is twofold: context inference and context-based decision-making. Agents interpret historical data to identify the system's attribute composition, guiding their collective efforts. The accuracy of these inferences is crucial, prompting us to integrate contrastive learning to refine the context inference network via unsupervised training. In the process of decision-making, agents integrate the inferred context with the observation features to select the optimal strategy. Our empirical results underscore the method's efficacy in bolstering decision-making efficiency and precision amidst attribute diversity, marking a significant stride in adaptive teaming for robust multi-robot deployments in dynamic real-world scenarios.
-    bibtex_show: |
-      @inproceedings{huang2024adaptive,
-        author={Huang, Shangjing and Zhao, Zijie and Zhu, Yuanheng and Zhao, Dongbin},
-        booktitle={2024 IEEE 13th Data Driven Control and Learning Systems Conference (DDCLS)}, 
-        title={Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning}, 
-        year={2024},
-        volume={},
-        number={},
-        pages={1780-1787},
-      }
+  # - title: "Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning"
+  #   authors: Shangjing Huang, <strong>Zijie Zhao</strong>, Yuanheng Zhu, Dongbin Zhao
+  #   category: other
+  #   conference_short: DDCLS
+  #   conference: IEEE 13th Data Driven Control and Learning Systems Conference <strong>(DDCLS)</strong>, 2024.
+  #   pdf: https://ieeexplore.ieee.org/abstract/document/10606742/
+  #   image: ./assets/img/others/teaser_ddcls_huang.png
+  #   abstract: >
+  #     In the realm of Multi-Agent Reinforcement Learning (MARL), the challenge of ensuring effective coordination in different multi -agent teams remains a significant hurdle. Existing methods often fall short in generalizing learned policies to novel team compositions, sizes, and capabilities. Addressing this gap, our study focuses on systems with variable and obscure attribute compositions, harnessing a context-based meta-reinforcement learning framework. The approach is twofold: context inference and context-based decision-making. Agents interpret historical data to identify the system's attribute composition, guiding their collective efforts. The accuracy of these inferences is crucial, prompting us to integrate contrastive learning to refine the context inference network via unsupervised training. In the process of decision-making, agents integrate the inferred context with the observation features to select the optimal strategy. Our empirical results underscore the method's efficacy in bolstering decision-making efficiency and precision amidst attribute diversity, marking a significant stride in adaptive teaming for robust multi-robot deployments in dynamic real-world scenarios.
+  #   bibtex_show: |
+  #     @inproceedings{huang2024adaptive,
+  #       author={Huang, Shangjing and Zhao, Zijie and Zhu, Yuanheng and Zhao, Dongbin},
+  #       booktitle={2024 IEEE 13th Data Driven Control and Learning Systems Conference (DDCLS)}, 
+  #       title={Adaptive Multi-Agent Coordination among Different Team Attribute Tasks via Contextual Meta-Reinforcement Learning}, 
+  #       year={2024},
+  #       volume={},
+  #       number={},
+  #       pages={1780-1787},
+  #     }
 
   - title: "CriticSearch: Fine-Grained Credit Assignment for Search Agents via a Retrospective Critic"
     authors: Yaocheng Zhang, Haohuan Huang, Zijun Song, Yuanheng Zhu, <strong>Zijie Zhao</strong>, Qichao Zhang, Dongbin Zhao
     category: other
-    conference_short: arXiv
-    conference: arXiv preprint <strong>(arXiv)</strong>, 2025.
+    conference_short: ACL 2026
+    conference: The 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2511.12159
     image: ./assets/img/others/teaser_criticsearch_zhang.png
     abstract: >
